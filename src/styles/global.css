@@ -1,0 +1,67 @@
+body {
+  background-color: #f3ecb8;
+  font-family: "Josefin Sans", sans-serif;
+  color: #b590ca;
+}
+
+/* NAVIGATION */
+#navigation {
+    margin: auto 2.5rem
+}
+
+#navigation a {
+  color: #b590ca;
+  font-size: 1.4rem;
+}
+
+#navigation .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 3rem;
+    text-align: center;
+}
+
+/* HOME PAGE */
+
+#mantra {
+    margin: 11rem 10rem;
+    text-align: center;
+}
+
+#mantra h2 {
+  color: #a8d3da;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#mantra h3 {
+  color: #f5cab3;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#intro {
+    background-color: #f5cab3;
+    padding: 8rem 18rem;
+}
+
+#intro h4 {
+    background-color: #f5cab3;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight:600;
+    margin-bottom: 1.5rem;
+}
+
+#intro p {
+    background-color: #f5cab3;
+    font-size: 1.5rem;
+}
