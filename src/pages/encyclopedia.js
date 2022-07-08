@@ -3,17 +3,20 @@ import React from "react";
 import Layout from "../components/layout";
 import EncSection from "../components/encSection";
 
-const EncyclopediaPage = (props) => {
-  const sections = props.data.allMongodbPersonalSiteDbEncsections.edges;
+const EncyclopediaPage = ({ data }) => {
+  const sections = data.allContentfulEncSections.edges;
 
   return (
     <Layout pageTitle="Encyclopedia">
       {sections.map((section) => {
+        const node = section.node;
+
         return (
           <EncSection
-            title={section.node.name}
-            description={section.node.description}
-            topics={section.node.topic}
+            key={node.contentful_id}
+            title={node.title}
+            description={node.description.childMarkdownRemark.html}
+            topics={node.topics}
           />
         );
       })}
@@ -23,17 +26,26 @@ const EncyclopediaPage = (props) => {
 
 export default EncyclopediaPage;
 
-export const sectionQuery = graphql`
-  query {
-    allMongodbPersonalSiteDbEncsections {
+export const sectionsQuery = graphql`
+  query GetSections {
+    allContentfulEncSections {
       edges {
         node {
-          name
-          mongodb_id
-          description
-          topic {
-            articleId
+          contentful_id
+          title
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+          topics {
             name
+            slug
+            icon {
+              gatsbyImageData
+              title
+              description
+            }
           }
         }
       }
