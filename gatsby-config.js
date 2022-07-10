@@ -4,16 +4,27 @@ module.exports = {
     title: "Theresa T Van"
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-source-mongodb',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        dbName: 'personalSiteDB',
-        collection: [
-          'enc-articles',
-          'enc-sections'
-        ],
-        connectionString: 'mongodb+srv://admin:xLmsJ9zTzQQM3PZX@cluster0.89nlm.mongodb.net'
+        name: `Theresa T Van`,
+        start_url: `/`,
+        background_color: `#1b1c1e`,
+        theme_color: `#1b1c1e`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       }
-    }
-  ],
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+  ]
 }

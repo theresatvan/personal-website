@@ -1,0 +1,82 @@
+.hero {
+  padding-top: 5rem;
+}
+
+.hero .hero-introduction {
+  text-align: left;
+}
+
+.hero .hero-introduction h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 5rem;
+}
+
+.list-group {
+  justify-content: center;
+}
+
+.list-group .list-group-item {
+  font-size: 1.75rem;
+  background-color: transparent;
+  border-color: transparent;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.hero-bio .card {
+  border-radius: 20px;
+  border: transparent;
+  text-align: center;
+  background-color: var(--face-card);
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.hero-bio .card .card-body {
+  margin: 25px 0;
+}
+
+.hero-bio .card .icon {
+  width: 11rem;
+  height: 11rem;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: block;
+  position: relative;
+  /* border-radius: 100%; */
+}
+
+.hero-bio .card .icon img {
+  width: 10rem;
+  height: 10rem;
+  border: 0.4rem solid #82bfc9;
+  border-radius: 100%;
+}
+
+@media (min-width: 960px) {
+  /* height: 90vh;
+    padding-top: 0;
+    padding-bottom: 0; */
+
+  .hero-introduction {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  /* margin-top: 2.9rem; */
+  /* .header-content h1 {
+        line-height: 3rem;
+    } */
+
+  .hero .hero-introduction {
+    text-align: center;
+  }
+
+  .main-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

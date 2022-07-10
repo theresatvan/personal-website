@@ -1,67 +1,99 @@
+@import "navigation.css";
+@import "footer.css";
+
+@import "landing/hero.css";
+@import "landing/content.css";
+
+:root {
+  --main-bg-color: #f3ecb8;
+  --main-text-color: #ad79cb;
+  --face-card: #c0e3e9;
+  --content-color: #f5cab3;
+
+  --primary-font: "Josefin Sans", sans-serif;
+  --secondary-font: "Playfair Display", serif;
+}
+
 body {
-  background-color: #f3ecb8;
-  font-family: "Josefin Sans", sans-serif;
-  color: #b590ca;
+  background-color: var(--main-bg-color);
+  font-family: var(--primary-font);
+  color: var(--main-text-color);
 }
 
-/* NAVIGATION */
-#navigation {
-    margin: auto 2.5rem
-}
-
-#navigation a {
-  color: #b590ca;
-  font-size: 1.4rem;
-}
-
-#navigation .navbar-brand {
-  font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+h1 {
   font-weight: 900;
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+a {
+  color: var(--main-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+a:hover {
+  color: var(--main-text-color);
+  font-weight: 600;
+  opacity: 0.7;
   text-decoration: none;
 }
 
-/* FOOTER */
-
-footer {
-    margin: 3rem;
-    text-align: center;
+.main-button,
+.main-button:visited {
+  background-color: var(--main-text-color);
+  border-color: var(--main-text-color);
+  border-radius: 0.5rem;
+  color: var(--main-bg-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem 0.75rem;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* HOME PAGE */
-
-#mantra {
-    margin: 11rem 10rem;
-    text-align: center;
+.main-button:hover {
+  background-color: var(--main-text-color);
+  border-color: var(--main-text-color);
+  border-radius: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem 0.75rem;
+  opacity: 0.8;
 }
 
-#mantra h2 {
-  color: #a8d3da;
-  font-size: 6rem;
-  font-style: italic;
-  font-weight: 500;
+.main-button:active {
+  background-color: var(--main-text-color) !important;
+  border-color: transparent !important;
+  border-radius: 0.5rem;
+  color: var(--main-bg-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem 0.75rem;
 }
 
-#mantra h3 {
-  color: #f5cab3;
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
-#intro {
-    background-color: #f5cab3;
-    padding: 8rem 18rem;
-}
-
-#intro h4 {
-    background-color: #f5cab3;
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight:600;
-    margin-bottom: 1.5rem;
-}
-
-#intro p {
-    background-color: #f5cab3;
-    font-size: 1.5rem;
+@media (max-width: 992px) {
+  .img-container img {
+    display: block;
+    margin: 0px auto;
+    height: 100%;
+    border-style: none;
+  }
 }

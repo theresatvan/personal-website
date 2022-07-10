@@ -1,0 +1,53 @@
+[
+    {
+        "skill": "Java"
+    },
+    {
+        "skill": "JavaScript"
+    },
+    {
+        "skill": "Python"
+    },
+    {
+        "skill": "R"
+    },
+    {
+        "skill": "HTML/CSS"
+    },
+    {
+        "skill": "C++"
+    },
+    {
+        "skill": "Spring Boot"
+    },
+    {
+        "skill": "Node.js"
+    },
+    {
+        "skill": "React"
+    },
+    {
+        "skill": "Bootstrap"
+    },
+    {
+        "skill": "Gatsby.js"
+    },
+    {
+        "skill": "MongoDB"
+    },
+    {
+        "skill": "Splunk"
+    },
+    {
+        "skill": "AWS EC2/S3"
+    },
+    {
+        "skill": "Jira"
+    },
+    {
+        "skill": "Data Structures & Algorithms"
+    },
+    {
+        "skill": "Design & Analysis of Algorithms"
+    }
+]
