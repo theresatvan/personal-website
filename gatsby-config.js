@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
-    title: "Theresa T Van"
+    title: "Theresa T Van",
+    description: "Personal portfolio website for Theresa T Van",
+    author: "@theresatvan"
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -15,7 +16,7 @@ module.exports = {
         background_color: `#1b1c1e`,
         theme_color: `#1b1c1e`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       }
     },
     `gatsby-transformer-json`,
